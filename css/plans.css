@@ -1,0 +1,33 @@
+.plans-container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 5rem 0rem 5rem;
+}
+.plans-hero {
+  text-align: center;
+  padding: 5rem 0 4.5rem;
+  line-height: 1.21;
+}
+.plans-hero h2 {
+  font-weight: 700;
+  color: var(--solution-header);
+  font-size: 3rem;
+}
+.plans-hero p {
+  color: var(--solution-p);
+}
+
+.plans-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card button {
+  background-color: inherit;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border: 1px solid var(--testimonial-bg);
+  border-radius: 100px;
+  color: var(--testimonial-bg);
+  font-weight: 600;
+}

@@ -1,0 +1,49 @@
+.testimonial {
+  overflow-x: hidden !important;
+  background-color: var(--testimonial-bg);
+}
+.overflow {
+  display: flex;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+}
+
+.reverse .testimonial-wrapper {
+  animation-duration: reverse;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: logoloop 30s linear infinite;
+}
+
+.logo-container {
+  margin-left: 1rem;
+  padding: 1rem;
+  aspect-ratio: 30/9;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+}
+.logo-container img {
+  height: 3rem;
+  margin-inline: 2rem;
+}
+
+@keyframes logoloop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-container img {
+    height: 2rem;
+    margin-inline: 0rem;
+  }
+}
