@@ -149,3 +149,13 @@
     display: none;
   }
 }
+
+.bottom-hidden-pages {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 2s;
+}
+.bottom-show-pages {
+  opacity: 1;
+  transform: translateY(10%);
+}

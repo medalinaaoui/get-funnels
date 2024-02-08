@@ -18,37 +18,39 @@
   </head>
   <body>
     <header class="box">
-      <div class="main-logo-container">
+      <div class="main-logo-container header-main-text-hidden">
         <img src="/assets/logo.png" alt="logo" class="logo" />
       </div>
 
-      <div class="welcome">
-        <span class="small-text">Join the Revolution Today</span>
-        <h1>Transform Ideas into Innovation</h1>
-        <p>
+      <div class="welcome transition-delay">
+        <span class="small-text header-main-text-hidden"
+          >Join the Revolution Today</span
+        >
+        <h1 class="header-main-text-hidden">Transform Ideas into Innovation</h1>
+        <p class="header-main-text-hidden">
           Get ready to revolutionize data operations, storage, and data sharing
           within your company.
         </p>
-        <div class="welcome-buttons">
+        <div class="welcome-buttons header-main-text-hidden">
           <button>Start for Free</button>
           <button>Pricing Guide</button>
         </div>
       </div>
-      <div>
+      <div class="">
         <img
           src="/assets/header1.png"
           alt="first header image"
-          class="header-image"
+          class="header-image header-main-image-hidden"
         />
         <img
           src="/assets/header1bg.png"
           alt="first header image bg"
-          class="header-image-bg"
+          class="header-image-bg header-main-image-hidden"
         />
         <img
           src="/assets/thatstar.png"
           alt="header image star"
-          class="header-image-star"
+          class="header-image-star header-main-image-hidden"
         />
       </div>
       <img
@@ -229,7 +231,7 @@
 
       <section class="solution">
         <div class="solution-header">
-          <div class="solution-text-container">
+          <div class="solution-text-container header-main-text-hidden">
             <h2>No two businesses are alike</h2>
             <p>
               That's why our solutions are customizable to meet your unique
@@ -238,17 +240,21 @@
             </p>
           </div>
 
-          <img src="/assets/phone.png" alt="phone image" class="phone-image" />
+          <img
+            src="/assets/phone.png"
+            alt="phone image"
+            class="phone-image header-main-image-hidden"
+          />
         </div>
         <div class="shortcuts">
-          <div class="shortcut">
+          <div class="shortcut header-main-text-hidden">
             <span class="shortcutone"
               ><i class="fa-solid fa-computer-mouse"></i
             ></span>
             <h3>Innovative Solutions</h3>
             <p>Our team of experts pushes technological boundaries.</p>
           </div>
-          <div class="shortcut">
+          <div class="shortcut bottom-hidden">
             <span class="shortcuttwo">
               <i class="fa-solid fa-feather-pointed"></i>
             </span>
@@ -256,7 +262,7 @@
             <p>The security of your data is our top priority.</p>
           </div>
 
-          <div class="shortcut">
+          <div class="shortcut header-main-image-hidden">
             <span class="shortcutthree">
               <i class="fa-solid fa-plane-departure"></i>
             </span>
@@ -283,12 +289,16 @@
           <img
             src="/assets/phones.png"
             alt="phones image image"
-            class="phones-image"
+            class="phones-image header-main-text-hidden"
           />
           <div class="your-partner-header-text">
-            <span class="small-text">Join the Revolution Today</span>
-            <h2>We are your partner towards success</h2>
-            <div class="partner-cols">
+            <span class="small-text header-main-image-hidden"
+              >Join the Revolution Today</span
+            >
+            <h2 class="header-main-image-hidden">
+              We are your partner towards success
+            </h2>
+            <div class="partner-cols header-main-image-hidden">
               <span class="icon">
                 <i class="fa-solid fa-database fa-2xl"></i>
               </span>
@@ -300,7 +310,7 @@
                 </p>
               </div>
             </div>
-            <div class="partner-cols">
+            <div class="partner-cols header-main-image-hidden">
               <span class="icon">
                 <i class="fa-solid fa-calendar-days fa-2xl"></i>
               </span>
@@ -313,7 +323,7 @@
                 </p>
               </div>
             </div>
-            <div class="partner-cols">
+            <div class="partner-cols header-main-image-hidden">
               <span class="icon">
                 <i class="fa-solid fa-server fa-2xl"></i>
               </span>
@@ -327,20 +337,20 @@
             </div>
           </div>
         </div>
-        <div class="divider">
+        <div class="divider bottom-hidden">
           <div></div>
           <div></div>
         </div>
         <div class="your-partner-footer">
-          <h3>Revolutionary Solutions</h3>
-          <p>
+          <h3 class="bottom-hidden">Revolutionary Solutions</h3>
+          <p class="bottom-hidden">
             We are a passionate team, driven by the belief that innovation can
             transform the world of data management.
           </p>
-          <div class="image-wrapper">
+          <div class="image-wrapper bottom-hidden-pages">
             <img src="assets/pages.png" alt="pages" />
           </div>
-          <div class="phone-image-wrapper">
+          <div class="phone-image-wrapper bottom-hidden-pages">
             <img src="assets/pagesphone.png" alt="mobile pages" />
           </div>
         </div>
@@ -349,34 +359,138 @@
       <section class="plans-container">
         <div class="plans">
           <div class="plans-hero">
-            <h2>Simple, transparent pricing</h2>
-            <p>Choose the package that best suits your exceptional project</p>
+            <h2 class="header-main-image-hidden">Choose Your Pricing Plans</h2>
+            <p class="header-main-text-hidden">
+              Choose the package that best suits your exceptional project
+            </p>
           </div>
           <div class="plans-cards">
-            <div class="card">
+            <div class="card basic rotate-start">
               <h5>Basic</h5>
-            
+              <div class="card-divider"></div>
 
+              <ul class="feature-list">
+                <li>Unlimited Storage</li>
+                <li>Limited Traffic</li>
+                <li>Premium Server</li>
+                <li class="disabled">Free SSL</li>
+                <li class="disabled">Turbo Booster Premium</li>
+              </ul>
+              <div class="price">
+                <span>$0</span>
+                <span> /month</span>
+              </div>
 
-          <ul class="feature-list">
-            <li>Unlimited Storage</li>
-            <li>Limited Traffic</li>
-            <li>Premium Server</li>
-            <li class="disabled">Free SSL</li>
-            <li class="disabled">Turbo Booster Premium</li>
-          </ul>
-          <div class="price">$0<span>/ month</span></div>
+              <button>Get Started</button>
+            </div>
+            <div class="card professional rotate-start">
+              <h5>Professional</h5>
+              <div class="card-divider"></div>
 
+              <ul class="feature-list">
+                <li>Unlimited Storage</li>
+                <li>Limited Traffic</li>
+                <li>Premium Server</li>
+                <li>Free SSL</li>
+                <li>Turbo Booster Premium</li>
+              </ul>
+              <div class="price-professional">
+                <span>$599</span>
+                <span> /month</span>
+              </div>
 
-          <button class="button">Get Started</button>
-        </div>
+              <button class="button">Get Started</button>
+            </div>
+            <div class="card basic rotate-start">
+              <h5>Business</h5>
+              <div class="card-divider"></div>
+
+              <ul class="feature-list">
+                <li>Unlimited Storage</li>
+                <li>Limited Traffic</li>
+                <li>Premium Server</li>
+                <li>Free SSL</li>
+                <li>Turbo Booster Premium</li>
+              </ul>
+              <div class="price">
+                <span>$999</span>
+                <span> /month</span>
+              </div>
+
+              <button>Get Started</button>
+            </div>
           </div>
+        </div>
+
+        <div class="feedbacks">
+          <div class="plans-feedback-hero">
+            <h2 class="bottom-hidden">Revolutionary Solutions</h2>
+            <p class="bottom-hidden">
+              We are a passionate team, driven by the belief that innovation can
+              transform the world of data management.
+            </p>
+          </div>
+          <div class="plans-cards bottom-hidden">
+            <article class="card professional">
+              <i class="fa-solid fa-quote-left quote-start"></i>
+              <p>
+                Easy to book online. I usually see the doctor as he always gives
+                good tips on how to improve your dental health
+              </p>
+              <i class="fa-solid fa-quote-right quote-end"></i>
+              <div class="user">
+                <span class="icon">
+                  <i class="fa-solid fa-image fa-xl"></i>
+                </span>
+                <div class="infos">
+                  <h6>Aaron Boby</h6>
+                  <span>2 November 2021</span>
+                </div>
+              </div>
+            </article>
+            <article class="card basic">
+              <i class="fa-solid fa-quote-left quote-start"></i>
+              <p>
+                Managing clinical programs and Expert Medical Opinion a person
+                qualified to practice medicine, especially one who specializes.
+              </p>
+              <i class="fa-solid fa-quote-right quote-end"></i>
+              <div class="user">
+                <span class="icon">
+                  <i class="fa-solid fa-image fa-xl"></i>
+                </span>
+                <div class="infos">
+                  <h6>Daren Axell</h6>
+                  <span>29 August 2021</span>
+                </div>
+              </div>
+            </article>
+            <article class="card basic">
+              <i class="fa-solid fa-quote-left quote-start"></i>
+              <p>
+                I always make my appointment at the same times as bringing my
+                children. We are always seen on time and the dentist friendly
+              </p>
+              <i class="fa-solid fa-quote-right quote-end"></i>
+              <div class="user">
+                <span class="icon">
+                  <i class="fa-solid fa-image fa-xl"></i>
+                </span>
+                <div class="infos">
+                  <h6>Dion Channing</h6>
+                  <span>22 August 2021</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
-    <script src="/javascript/index.js"></script>
     <script
       src="https://kit.fontawesome.com/4816e294c4.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="/javascript/plans.js"></script>
+    <script defer src="/javascript/header.js"></script>
   </body>
 </html>

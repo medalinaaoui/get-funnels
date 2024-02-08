@@ -8,6 +8,7 @@
   --solution-header: #1e254c;
   --solution-p: #999cac;
   --soft-purple: #cabdff;
+  --secondary-text: #21203c;
   font-family: "Poppins", sans-serif;
 }
 
@@ -221,4 +222,46 @@ header {
     width: 52px;
     /* bottom: 4%; */
   }
+}
+
+.header-main-image-hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 2s;
+}
+.header-main-image-show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.header-main-text-hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.header-main-text-show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.transition-delay .small-text {
+  transition: all 1s;
+}
+
+.transition-delay h1 {
+  transition: all 1s;
+}
+.transition-delay p {
+  transition: all 1s;
+}
+.transition-delay .welcome-buttons {
+  transition: all 1s;
+}
+
+.bottom-hidden {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 2s;
+}
+.bottom-show {
+  opacity: 1;
+  transform: translateY(0%);
 }

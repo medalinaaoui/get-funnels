@@ -2,32 +2,225 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  padding: 2rem 5rem 0rem 5rem;
+  padding: 2rem 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 .plans-hero {
   text-align: center;
-  padding: 5rem 0 4.5rem;
+  /* padding: 5rem 0 4.5rem; */
   line-height: 1.21;
+  margin-bottom: 2.5rem;
 }
 .plans-hero h2 {
   font-weight: 700;
   color: var(--solution-header);
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .plans-hero p {
   color: var(--solution-p);
 }
 
 .plans-cards {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  border: 0.8px solid var(--header);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .card button {
   background-color: inherit;
   padding: 0.8rem 1.6rem;
   border: none;
-  border: 1px solid var(--testimonial-bg);
   border-radius: 100px;
-  color: var(--testimonial-bg);
   font-weight: 600;
+}
+.card-divider {
+  width: 100%;
+  height: 2px;
+  background-color: var(--soft-purple);
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+.feature-list .disabled {
+  color: var(--solution-p);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price :first-child {
+  font-weight: 500;
+  color: var(--header);
+  font-size: 2.5rem;
+}
+.price :last-child {
+  color: var(--first-button);
+}
+
+.basic {
+  color: var(--secondary-text);
+}
+.professional {
+  background-color: var(--header);
+  color: var(--text);
+}
+
+.basic h5 {
+  color: var(--solution-header);
+}
+.professional h5 {
+  color: var(--text);
+}
+
+.basic button {
+  border: 1px solid var(--testimonial-bg);
+  color: var(--testimonial-bg);
+}
+.professional button {
+  border: 1px solid var(--header);
+  color: var(--header);
+  background-color: var(--text);
+}
+
+.price-professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price-professional :first-child {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 2.5rem;
+}
+.price-professional :last-child {
+  color: var(--text);
+}
+
+.plans-feedback-hero {
+  text-align: center;
+  /* padding: 5rem 0 4.5rem; */
+  line-height: 1.21;
+  margin-bottom: 2.5rem;
+}
+.plans-feedback-hero h2 {
+  font-weight: 700;
+  color: var(--solution-header);
+  font-size: 3rem;
+}
+.plans-feedback-hero p {
+  color: var(--secondary-text);
+}
+
+@media (max-width: 767px) {
+  .plans-cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 0rem 3rem;
+  }
+  .plans-feedback-hero h2 {
+    font-size: 1.5rem;
+  }
+  .plans-container {
+    padding: 2rem;
+  }
+}
+
+.flip-vertical-right {
+  -webkit-animation: flip-vertical-right 1s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+}
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+}
+
+.quote-start {
+  align-self: flex-start;
+}
+.quote-end {
+  align-self: flex-end;
+  flex: 1;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  align-self: flex-start;
+}
+.user .infos {
+  display: flex;
+  flex-direction: column;
+}
+.user .infos h6 {
+  font-size: 1rem;
+}
+.user .infos span {
+  font-size: 0.7rem;
+}
+
+.user .icon {
+  aspect-ratio: 1/1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 99px;
+  display: grid;
+  place-items: center;
+  background-color: var(--text);
+  color: var(--header);
+}
+.professional .user .icon {
+  background-color: var(--text);
+  color: var(--header);
+}
+.basic .user .icon {
+  background-color: var(--header);
+  color: var(--text);
 }
