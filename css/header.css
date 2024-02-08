@@ -9,7 +9,11 @@
   --solution-p: #999cac;
   --soft-purple: #cabdff;
   --secondary-text: #21203c;
+  --footer: #252525;
   font-family: "Poppins", sans-serif;
+}
+html {
+  overflow-x: hidden;
 }
 
 * {
@@ -74,7 +78,8 @@ header {
   gap: 1rem;
   margin-top: 1rem;
 }
-.welcome-buttons :first-child {
+
+/* .welcome-buttons :first-child {
   background-color: var(--first-button);
   padding: 0.8rem 1.6rem;
   border: none;
@@ -83,7 +88,67 @@ header {
   border-radius: 100px;
   color: var(--text);
   font-weight: 600;
+} */
+
+.button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--first-button);
 }
+
+.button:hover {
+  box-shadow: 0.5px 0.5px 150px black;
+}
+
+.type1::after {
+  content: "For Free";
+  height: 50px;
+  width: 150px;
+  background-color: var(--first-button);
+  color: var(--text);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "Start";
+  height: 50px;
+  width: 150px;
+  background-color: var(--first-button);
+  color: var(--text);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
 .welcome-buttons :last-child {
   background-color: inherit;
   padding: 0.8rem 1.6rem;
