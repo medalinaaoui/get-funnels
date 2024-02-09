@@ -15,7 +15,9 @@
 html {
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none;
+}
 * {
   padding: 0%;
   margin: 0%;
@@ -298,12 +300,17 @@ header {
   }
   .header-main-image-hidden {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     transition: all 1s;
   }
   .header-main-image-show {
     opacity: 1;
     transform: translateX(0%);
+  }
+  .header-image-placehoder {
+    max-width: 100% !important;
+    height: 74vh;
+    background: inherit;
   }
 }
 .bottom-hidden {

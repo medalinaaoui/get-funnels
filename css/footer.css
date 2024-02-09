@@ -15,7 +15,7 @@ footer h6 {
   width: 40%;
   flex: 1;
 }
-footer p {
+.footer-des {
   color: var(--text);
   font-weight: 300;
   width: 30%;
@@ -48,6 +48,7 @@ footer .divider {
 .end p {
   font-size: 0.7rem;
   text-wrap: nowrap;
+  color: var(--text);
 }
 .terms-policy {
   display: flex;
@@ -102,7 +103,7 @@ footer .divider {
     text-align: center;
     flex: 0;
   }
-  footer p {
+  .footer-des {
     color: var(--text);
     font-weight: 200;
     width: 100%;
@@ -115,19 +116,50 @@ footer .divider {
   }
   .footer-image {
     position: absolute;
-    width: 250px;
+    width: 100vw;
     height: auto;
-
+    right: 0%;
     z-index: 3;
 
     bottom: 0%;
-    transform: rotate(45deg);
+    transform: rotate(67deg);
   }
   .footer-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .contacts {
     flex-direction: column;
+  }
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .end p {
+    font-size: 0.5rem;
+    color: var(--text);
+  }
+  .terms-policy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer .divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--soft-purple);
+    margin: 1rem 0rem 0.3rem;
+  }
+  .footer-image-placehoder {
+    max-width: 100% !important;
+    height: 50vh;
+    background: inherit;
   }
 }
